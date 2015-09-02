@@ -1,0 +1,37 @@
+{
+  "name": "clamp.js",
+  "version": "0.0.0",
+  "description": "Returns a function that clamps input values to range [min <= x <= max].",
+  "main": "index.js",
+  "browser": "index.js",
+  "scripts": {
+    "test": "node test/test.main.js | tap-spec",
+    "patch": "npm version patch && npm publish",
+    "minor": "npm version minor && npm publish",
+    "major": "npm version major && npm publish",
+    "postpublish": "git push origin master --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meandmax/clamp.js.git"
+  },
+  "keywords": [
+    "higher",
+    "order",
+    "function",
+    "limit",
+    "clamp",
+    "es6"
+  ],
+  "author": "meandmax <info@maximimilian-heinz.de> (http://maximilian-heinz.de/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meandmax/clamp.js/issues"
+  },
+  "homepage": "https://github.com/meandmax/clamp.js",
+  "devDependencies": {
+    "babel": "latest",
+    "tap-spec": "latest",
+    "tape": "latest"
+  }
+}

@@ -1,0 +1,5 @@
+node_modules
+npm-debug.log
+test/lcov.info
+test/coverage.html
+.DS_Store
