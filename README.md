@@ -4,14 +4,19 @@
 [![npm](http://img.shields.io/npm/v/clamp.js.svg?style=flat)](https://www.npmjs.com/package/clamp.js)
 [![build](http://img.shields.io/travis/meandmax/clamp.js/master.svg?style=flat)](https://travis-ci.org/meandmax/clamp.js)
 [![code climate](http://img.shields.io/codeclimate/github/meandmax/clamp.js.svg?style=flat)](https://codeclimate.com/github/meandmax/clamp.js)
-[![dependencies](http://img.shields.io/david/meandmax/clamp.js.svg?style=flat)](https://david-dm.org/meandmax/clamp.js#info=dependencies&view=table)
 [![devDependencies](http://img.shields.io/david/dev/meandmax/clamp.js.svg?style=flat)](https://david-dm.org/meandmax/clamp.js#info=devDependencies&view=table)
+
+### Install:
 
 ```
 npm install clamp.js
 ```
 
-## clamp()
+### Run tests
+
+```
+npm test
+```
 
 Returns a function that clamps input values to range [min <= x <= max]. Useful for data structures like arrays. Swapping min and max is allowed and will be corrected.
 
@@ -42,13 +47,13 @@ Returns a function that clamps input values to range [min <= x <= max]. Useful f
     // result -> sequence of values over time: 1,2,3,3,3
 ```
 
-#### Further reading on functional reactive programming:
+### Further reading on functional reactive programming:
 - [Introduction to frp](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
 - [RxJS](http://reactive-extensions.github.io/RxJS/)
 - [BaconJs](https://github.com/baconjs/bacon.js)
 - [RxJs Github](https://github.com/Reactive-Extensions/RxJS)
 - [Kefir](https://github.com/rpominov/kefir)
 
-#### Copyright
+### Copyright
 
 Copyright &copy; 2015 Maximilian Heinz, contributors. Released under the MIT License
