@@ -2,13 +2,13 @@
   "name": "clamp.js",
   "version": "0.2.1",
   "description": "Returns a function that clamps input values to range [min <= x <= max].",
-  "main": "index.js",
-  "browser": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "node test/test.main.js | tap-spec",
     "patch": "npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
+    "prepublish": "babel index.js --out-file lib/index.js",
     "postpublish": "git push origin master --follow-tags"
   },
   "repository": {
