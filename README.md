@@ -25,9 +25,7 @@ Returns a function that clamps input values to range [min <= x <= max]. Useful f
  ```js
     import clamp from 'clamp.js';
 
-    const limiter = clamp(0, 3);
-
-    [1,2,3,4,5].map(limiter); // [1,2,3,3,3]
+    [1,2,3,4,5].map(clamp(0, 3)); // [1,2,3,3,3]
  ```
 
 Can be used with frp libraries (e.g. [Bacon.js](https://github.com/baconjs/bacon.js), [RxJS](https://github.com/Reactive-Extensions/RxJS), [Kefir.js](https://github.com/pozadi/kefir)). Examples are written with Bacon.js
