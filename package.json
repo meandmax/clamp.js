@@ -1,6 +1,6 @@
 {
   "name": "clamp.js",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Returns a function that clamps input values to range [min <= x <= max].",
   "main": "lib/index.js",
   "scripts": {
@@ -33,6 +33,7 @@
   "homepage": "https://github.com/meandmax/clamp.js",
   "devDependencies": {
     "babel": "latest",
+    "rimraf": "latest",
     "tap-spec": "latest",
     "tape": "latest"
   }
