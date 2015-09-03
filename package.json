@@ -1,6 +1,6 @@
 {
   "name": "clamp.js",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Returns a function that clamps input values to range [min <= x <= max].",
   "main": "lib/index.js",
   "scripts": {
