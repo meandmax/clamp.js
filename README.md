@@ -30,16 +30,16 @@ Returns a function that clamps input values to range [min <= x <= max]. Useful f
     [1,2,3,4,5].map(limiter); // [1,2,3,3,3]
  ```
 
+Can be used with frp libraries (e.g. [Bacon.js](https://github.com/baconjs/bacon.js), [RxJS](https://github.com/Reactive-Extensions/RxJS), [Kefir.js](https://github.com/pozadi/kefir)). Examples are written with Bacon.js
+
 ### in frp:
 
 ```js
     import clamp from 'clamp.js';
     import Bacon from 'baconjs';
 
-    const limiter = clamp(0, 3);
-
     let stream = Bacon.sequentially(1000, [1, 2, 3, 4, 5])
-        .map(limiter);
+        .map(clamp(0, 3));
 
     // every 1000ms stream emits a value which is mapped on clamp()
     stream.log();
