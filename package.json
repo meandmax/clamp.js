@@ -5,10 +5,10 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "node test/test.main.js | tap-spec",
-    "patch": "npm version patch && npm publish",
-    "minor": "npm version minor && npm publish",
-    "major": "npm version major && npm publish",
-    "prepublish": "babel index.js --out-file lib/index.js",
+    "patch": "npm version patch && npm run build && npm publish",
+    "minor": "npm version minor && npm run build && npm publish",
+    "major": "npm version major && npm run build && npm publish",
+    "build": "babel index.js --out-file lib/index.js",
     "postpublish": "git push origin master --follow-tags"
   },
   "repository": {
