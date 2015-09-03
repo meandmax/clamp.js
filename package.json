@@ -4,10 +4,12 @@
   "description": "Returns a function that clamps input values to range [min <= x <= max].",
   "main": "lib/index.js",
   "scripts": {
+    "clean": "rimraf lib/*",
     "test": "node test/test.main.js | tap-spec",
     "patch": "npm version patch && npm run build && npm publish",
     "minor": "npm version minor && npm run build && npm publish",
     "major": "npm version major && npm run build && npm publish",
+    "prebuild": "npm run clean",
     "build": "babel index.js --out-file lib/index.js",
     "postpublish": "git push origin master --follow-tags"
   },
