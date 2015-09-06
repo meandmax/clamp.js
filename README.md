@@ -3,6 +3,7 @@
 [![license](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://raw.githubusercontent.com/meandmax/clamp.js/master/LICENSE)
 [![npm](http://img.shields.io/npm/v/clamp.js.svg?style=flat)](https://www.npmjs.com/package/clamp.js)
 [![build](http://img.shields.io/travis/meandmax/clamp.js/master.svg?style=flat)](https://travis-ci.org/meandmax/clamp.js)
+[![Coverage Status](https://coveralls.io/repos/bucaran/example-rise/badge.svg?branch=master&service=github)](https://coveralls.io/github/bucaran/example-rise?branch=master)
 [![code climate](http://img.shields.io/codeclimate/github/meandmax/clamp.js.svg?style=flat)](https://codeclimate.com/github/meandmax/clamp.js)
 [![devDependencies](http://img.shields.io/david/dev/meandmax/clamp.js.svg?style=flat)](https://david-dm.org/meandmax/clamp.js#info=devDependencies&view=table)
 
