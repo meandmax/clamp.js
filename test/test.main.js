@@ -1,3 +1,2 @@
 require('babel/register')();
-
-var x = require('./test.clamp.js');
+require('./test.clamp.js');

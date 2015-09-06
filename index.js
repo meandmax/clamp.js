@@ -7,7 +7,7 @@
  * @param  {int} max    The range maximum, inclusive.
  * @return {function}   The function that limits its input to the specified range.
  */
-export default function clamp(min, max) {
+export default function clamp (min, max) {
     // Set min to 0 if only one value specified
     if (typeof max === 'undefined') {
         max = min;
@@ -22,7 +22,7 @@ export default function clamp(min, max) {
         max = tmp;
     }
 
-    return function(value) {
+    return function (value) {
         return Math.min(Math.max(value, min), max);
     };
 }

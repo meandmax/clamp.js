@@ -5,11 +5,15 @@
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib/*",
+    "lint": "eslint test index.js",
     "test": "node test/test.main.js | tap-spec",
+    "coverage": "babel-node node_modules/.bin/isparta cover test/*.js",
+    "coveralls": "npm run coverage && coveralls < coverage/lcov.info",
+    "postcoveralls": "rimraf ./coverage",
     "patch": "npm version patch && npm run build && npm publish",
     "minor": "npm version minor && npm run build && npm publish",
     "major": "npm version major && npm run build && npm publish",
-    "prebuild": "npm run clean",
+    "prebuild": "npm run clean && npm run lint & npm run test",
     "build": "babel index.js --out-file lib/index.js",
     "postpublish": "git push origin master --follow-tags"
   },
@@ -33,6 +37,12 @@
   "homepage": "https://github.com/meandmax/clamp.js",
   "devDependencies": {
     "babel": "latest",
+    "coveralls": "latest",
+    "eslint": "latest",
+    "eslint-config-standard": "latest",
+    "eslint-plugin-standard": "latest",
+    "faucet": "latest",
+    "isparta": "latest",
     "rimraf": "latest",
     "tap-spec": "latest",
     "tape": "latest"
